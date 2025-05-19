@@ -1,0 +1,40 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--container-padding);
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: min(500px, 90%);
+    padding: clamp(20px, 4vw, 25px); /* Slightly increased padding for more defined space */
+    border-radius: 8px; /* Slightly reduced border-radius for a less rounded look */
+    background-color: var(--bg-color-light);
+    border: solid 1.5px var(--border-color); /* Slightly thinner border for a sharper line */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow for definition */
+}
+
+.login-card input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 4px; /* Slightly reduced border-radius for input fields */
+    border: 1.5px solid var(--border-color); /* Consistent border with the card */
+    outline: none;
+    font-size: clamp(0.9rem, 2vw, 1.1rem); /* Slightly increased font size for better definition */
+    font-weight: 500; /* Slightly reduced font weight for a cleaner look */
+    color: var(--text-color-dark);
+}
+
+.login-card input:focus {
+    border: var(--primary-color) solid 1.5px; /* Consistent border thickness on focus */
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(var(--primary-color-rgb), 0.5); /* Subtle focus shadow */
+}
